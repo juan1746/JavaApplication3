@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ejercicio1 {
+
+    public static void main(String[] args) {
+        // Scanner para leer el número
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese un número (a): ");
+        double a = scanner.nextDouble();
+
+        // Calcular el logaritmo decimal
+        double logDecimal = Math.log10(a);
+
+        // Calcular el logaritmo natural
+        double logNatural = Math.log(a);
+
+        // Mostrar los resultados
+        System.out.printf("El logaritmo decimal de %.2f es: %.2f\n", a, logDecimal);
+        System.out.printf("El logaritmo natural de %.2f es: %.2f\n", a, logNatural);
+    }
+}
