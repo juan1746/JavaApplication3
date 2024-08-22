@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class ejercicio2 {
+
+    public static void main(String[] args) {
+        // Scanner para leer los datos
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicitar los valores de x e y
+        System.out.print("Ingrese el valor de x: ");
+        double x = scanner.nextDouble();
+
+        System.out.print("Ingrese el valor de y: ");
+        double y = scanner.nextDouble();
+
+        // Calcular la raíz cuadrada de x^2 + y^2
+        double resultado = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
+
+        // Mostrar el resultado
+        System.out.printf("La raíz cuadrada de x^2 + y^2 es: %.2f\n", resultado);
+    }
+}
